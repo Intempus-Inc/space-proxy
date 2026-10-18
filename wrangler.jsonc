@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "space-proxy",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-07-30",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "demo.example.com",
+      "custom_domain": true
+    }
+  ],
+  "vars": {
+    "PUBLIC_ORIGIN": "https://demo.example.com",
+    "SPACE_ORIGIN": "https://example-demo.hf.space"
+  },
+  "observability": {
+    "enabled": false
+  }
+}

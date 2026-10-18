@@ -1,0 +1,19 @@
+{
+  "name": "@intempus/space-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "A fixed-upstream Cloudflare Worker for a public app in a private Hugging Face Space.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "miniflare": "4.20260730.0",
+    "wrangler": "4.151.1"
+  }
+}
